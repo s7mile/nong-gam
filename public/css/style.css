@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* [S] reset */
+body {
+	overflow-x:hidden;
+	background-color: #fffbdb;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+img {
+	border: 0;
+	vertical-align: middle;
+}
+li {list-style: none}
+a {text-decoration: none}
+a, html, button, input, textarea {
+	font-family: 'Nanum Gothic', dotum;
+	font-size: 13px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+iframe {border: 0;}
+a:hover {text-decoration: underline;}
+em {font-style: normal;}
+.btn, button, input[type="submit"], input[type="image"], input[type="button"] {
+	padding: 8px 10px;
+	border: 1px solid #ccc;
+	background: none;
+	border-radius: 5px;
+	cursor: pointer
+}
+input[type="checkbox"],
+input[type="radio"] {vertical-align: middle}
+/* [E] reset */
+
+section {
+	padding-bottom: 715px;
+	background: url("../img/bg.png") no-repeat #fffbdb;
+	background-size: 100% auto
+}
