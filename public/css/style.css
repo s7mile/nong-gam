@@ -1,4 +1,37 @@
 @charset "utf-8";
+/*
+ * Nanum Gothic (Korean) http://www.google.com/webfonts/earlyaccess
+ */
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 700;
+	src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.eot);
+	src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.woff2) format('woff2'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.woff) format('woff'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot);
+	src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff2) format('woff2'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff) format('woff'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 800;
+	src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.eot);
+	src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.woff2) format('woff2'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.woff) format('woff'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.ttf) format('truetype');
+}
 
 /* [S] reset */
 body {
@@ -36,6 +69,77 @@ input[type="radio"] {vertical-align: middle}
 
 section {
 	padding-bottom: 715px;
-	background: url("../img/bg.png") no-repeat #fffbdb;
 	background-size: 100% auto
+}
+
+.main-noti-box {
+	margin: 10px;
+	padding: 25px 20px;
+	border-radius: 10px;
+	border: 1px solid #e5e4e4;
+	background: white;
+	box-shadow: 0px 1px 2px rgba(2, 2, 2, 0.35);
+	text-align: center;
+	color: #464646;
+}
+
+.main-noti-box.alert {
+	color : white;
+	background-color: #f45d55;
+}
+
+.main-noti-box .noti-ment {
+	font-size: 1.7em;
+	letter-spacing: -1px;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main-noti-box img.noti-icon {
+	width: 50px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.background {
+	z-index: -1;
+	width: 100%;
+	height: 248px;
+	background: url("/img/bg.png") no-repeat #fffbdb;
+	background-size: 100%;
+	position: fixed;
+	bottom: 0px;
+}
+
+.main-weather-summary {
+	width: 165px;
+	height: 165px;
+	background : url('/img/one-sun.png') no-repeat;
+	background-size: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#temper{
+	color: white;
+	font-size: 65px;
+	letter-spacing: -5px;
+	font-weight: 600;
+}
+
+#weather {
+	color: white;
+	letter-spacing: -2px;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+#measure {
+	color: white;
+	font-size: 53px;
+	padding: 0px;
+	margin: 0px;
+	letter-spacing: -6px;
+	vertical-align: super;
 }
