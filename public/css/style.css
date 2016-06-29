@@ -113,11 +113,13 @@ section {
 }
 
 .main-weather-summary {
+	/* margin-top: 13px; */
 	width: 165px;
 	height: 165px;
 	background : url('/img/one-sun.png') no-repeat;
 	background-size: 100%;
 	margin: 0 auto;
+	margin-top: 16px;
 	text-align: center;
 }
 
@@ -142,4 +144,17 @@ section {
 	margin: 0px;
 	letter-spacing: -6px;
 	vertical-align: super;
+}
+
+#than {
+	letter-spacing: -0.5px;
+	color : #434343;
+	font-weight: 600;
+}
+
+#btn-scroll {
+	position: absolute;
+	height: 46px;
+	bottom: 10px;
+	left: calc(50% - 23px);
 }
