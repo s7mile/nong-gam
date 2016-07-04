@@ -69,6 +69,7 @@ input[type="radio"] {vertical-align: middle}
 
 section {
 	padding-bottom: 200px;
+	padding-bottom: 715px;
 	background-size: 100% auto
 }
 
@@ -324,5 +325,3 @@ i.modify {
 	background: url("../img/ico_8_4.png") no-repeat;
 	background-position: center;
 }
-
-
